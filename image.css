@@ -1,0 +1,14 @@
+html{
+	top: 0;
+	left: 0;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	background-color: black;
+}
+
+p {
+	text-decoration-style: none;
+	color: #cc0000;
+	font-style: italic;
+	font-family: 'Merriweather','Slabo 27px', serif;
+}
