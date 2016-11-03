@@ -1,0 +1,169 @@
+
+html {
+	color: #cccccc;
+	line-height: 1.4;
+	font-family: 'Merriweather';
+}
+
+#index-body {
+	background-image: url(../graphics/atmospheric-design.png);
+}
+
+#aboutme-body, #gallery-body, #inspirations-body {
+	background-image: url(../graphics/atmospheric-design.png);
+	background-attachment: fixed;
+}
+*{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	max-width: 1280px;
+}
+
+p {
+	margin: 20px;
+}
+
+h1, h2, h3 {
+	margin: 12px 0 0;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+div, li, .nav ul li a:hover, .active{
+		border-radius: 10px;
+}
+
+#container {
+	width: 90%;
+	min-width: 400px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#container #header {
+	background-color: rgba(25, 0, 40, 1);
+	position: fixed;
+    top: 4px;
+	margin: 0;
+	width: 100%;
+	min-width: 400px;
+	max-width: 900px;
+	box-sizing: border-box;
+}
+
+.nav {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5em;
+	box-sizing: border-box;
+}
+
+.nav a{
+	text-align: center;
+	text-decoration: none;
+	color: #cccccc;	
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.nav a:hover {
+	padding: 10px;
+	background-color: #cc0000;
+	text-shadow: 0 0 10px rgba(255,255,0,1);
+}
+.active {
+	background-color: maroon;
+}
+
+#body p {
+	font-family: 'Roboto Slab', serif;
+}
+
+#body a, #footer a {color: #cc0000;
+	text-decoration: none;
+}
+
+#body {
+	margin-top: 75px;
+	padding: 25px;
+	background-color: rgba(0, 18, 51, .85);
+	text-shadow: -3px 4px rgba(0,0,0,.6);
+}
+
+#footer {
+	background-color: rgba(25, 0, 40, .9);
+	text-shadow: -3px 4px rgba(0,0,0,.6);
+	font-family: "Merriweather";
+	text-align: center;
+	padding: 2%;
+}
+
+#indexfooter {
+	text-align: center;
+	padding: 30px;
+}
+
+#front{	
+	height: 750px;
+	box-sizing: border-box;
+}
+
+#front a {
+	padding: 30px;
+	text-decoration: none;
+	color: rgba(255,0,0,.5);
+	font-family: "Merriweather"
+}
+
+#front a:hover {
+text-shadow: 0 0 50px rgba(255,100,100,1);
+}
+#f-benrodia {
+	font-size: 3.5em;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#f-gallery {
+	font-size: 2em;
+	position: absolute;
+	top: 70px;
+	left: 550px
+}
+#f-about {
+	font-size: 1.6em;
+	position: absolute;
+	top: 340px;
+	left: 600px;
+}
+#f-inspirations {
+	font-size: 1.2em;
+	position: absolute;
+	top: 500px;
+	left: 490px;
+}
+
+
+.section p {
+	visibility: hidden;
+	display: inline-block;
+	padding: 10px;
+}
+
+.section img {
+	box-sizing: border-box;
+	width: 250px;
+	height: 250px;
+	margin: 0 5px; 
+	display: inline-block;
+}
+
+.section img:hover, #gallery p:hover {
+	opacity: .5;
+}
+
