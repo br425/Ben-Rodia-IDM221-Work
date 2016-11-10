@@ -30,10 +30,9 @@ h1, h2, h3 {
 
 li {
 	list-style: none;
-	display: inline-block;
 }
 
-div, li, .nav ul li a:hover, .active{
+div, li, .nav ul li a:hover, aside, .active{
 		border-radius: 10px;
 }
 
@@ -45,6 +44,7 @@ div, li, .nav ul li a:hover, .active{
 }
 
 #container #header {
+	z-index: 10;
 	background-color: rgba(25, 0, 40, 1);
 	position: fixed;
     top: 4px;
@@ -61,6 +61,7 @@ div, li, .nav ul li a:hover, .active{
 	font-size: 1.5em;
 	box-sizing: border-box;
 }
+.nav li {display: inline-block;}
 
 .nav a{
 	text-align: center;
@@ -75,8 +76,34 @@ div, li, .nav ul li a:hover, .active{
 	background-color: #cc0000;
 	text-shadow: 0 0 10px rgba(255,255,0,1);
 }
+
 .active {
 	background-color: maroon;
+}
+
+.section li{
+	display: inline-block;
+}
+.centered {
+	text-align: center;
+}
+
+aside {
+	background-color: rgba(25, 0, 40, 1);
+	position: fixed;
+	padding: 10px;
+	top: 0;
+	left: 0;
+}
+aside a {
+	color: #cccccc;	
+	margin: 10px 5px 10px 30px;
+	text-decoration: none;
+	font-size: 1.3em;	
+	text-align: center;
+}
+aside li :hover {
+	color: #cc0000;
 }
 
 #body p {
@@ -120,8 +147,9 @@ div, li, .nav ul li a:hover, .active{
 }
 
 #front a:hover {
-text-shadow: 0 0 50px rgba(255,100,100,1);
+text-shadow: 0 0 10px rgba(255,255,100,1);
 }
+
 #f-benrodia {
 	font-size: 3.5em;
 	position: absolute;
@@ -147,7 +175,19 @@ text-shadow: 0 0 50px rgba(255,100,100,1);
 	top: 500px;
 	left: 490px;
 }
+#welcome {
+	position: absolute;
+	top: 585px;
+	left: 620px; 
+	text-indent: 30px;
+	text-align: left;
+	font-size: 1.3em;
+}
+.reach {font-size: 1.3em}
 
+.section {
+	padding: 25px;
+}
 
 .section p {
 	visibility: hidden;
@@ -167,3 +207,15 @@ text-shadow: 0 0 50px rgba(255,100,100,1);
 	opacity: .5;
 }
 
+.face {
+	top: 100px;
+	float: right;
+	clear: left;
+	overflow: auto;
+}
+
+.face img {
+	box-sizing: border-box;
+	width: 250px;
+	height: 300px;
+}
