@@ -1,0 +1,263 @@
+
+/*GENERAL TAGS*/
+
+html {
+	color: #cccccc;
+	line-height: 1.4;
+	font-family: 'Merriweather';
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	max-width: 1280px;
+}
+
+p {
+	margin: 20px;
+}
+
+h1, h2, h3 {margin: 12px 0 0;}
+
+li {list-style: none;}
+
+div, li, .nav ul li a:hover, .active {border-radius: 10px;}
+
+.centered {text-align: center;}
+
+
+/*PAGE TAGS*/
+
+#index-body {
+	background-image: url(../graphics/atmospheric-design.png);
+}
+
+#aboutme-body, #gallery-body, #inspirations-body {
+	background-image: url(../graphics/atmospheric-design.png);
+	background-attachment: fixed;
+
+}
+
+
+/*OVERALL STRUCTURE TAGS*/
+
+#container {
+	width: 90%;
+	min-width: 400px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#container #header {
+	z-index: 10;
+	background-color: #330000;
+	position: fixed;
+    top: 5px;
+	width: 100%;
+	min-width: 400px;
+	max-width: 900px;
+	box-sizing: border-box;
+}
+
+#body {
+	margin-top: 75px;
+	padding: 25px;
+	background-color: rgba(0, 18, 51, .85);
+	text-shadow: -3px 4px rgba(0,0,0,.6);
+}
+
+#body p {font-family: 'Roboto Slab', serif;}
+
+#body a, #footer a {color: #cc0000; text-decoration: none;}
+
+#footer {
+	background-color: #330000;
+	text-shadow: -3px 4px rgba(0,0,0,.6);
+	font-family: "Merriweather";
+	text-align: center;
+	padding: 2%;
+}
+#footer p {
+	display: inline-block;
+}
+
+/*NAVIGATION TAGS*/
+
+.nav {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.nav li {display: inline-block;}
+
+.nav a{
+	text-align: center;
+	text-decoration: none;
+	color: #cccccc;	
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.nav a:hover {
+	padding: 10px;
+	background-color: #cc0000;
+	text-shadow: 0 0 10px rgba(255,255,0,1);
+}
+
+.active {
+	background-color: maroon;
+}
+
+.benrodia img {
+	box-sizing: border-box;
+	height: 33px;
+	width: 100px;
+	margin-top: 10px; 
+}
+
+/*GALLERY ASIDE*/
+
+aside {
+	background-color: rgba(25, 0, 40, 1);
+	position: fixed;
+	padding: 0 10px 10px 10px;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 10px 60px;
+}
+aside a {
+	color: #cccccc;	
+	margin: 10px 5px 10px 30px;
+	text-decoration: none;
+	font-size: 1.3em;	
+	text-align: center;
+}
+aside li {padding: 20px 0}
+
+
+aside li :hover {
+	color: #cc0000;
+	padding: 0 -10px 0 0;
+}
+
+
+/*INDEX SPECIFIC*/
+
+#indexfooter {
+	text-align: center;
+	padding: 30px;
+}
+
+#front{	
+	height: 750px;
+	box-sizing: border-box;
+}
+
+#front a {
+	padding: 30px;
+	text-decoration: none;
+	color: rgba(255,0,0,.5);
+	font-family: "Merriweather"
+}
+
+#front a:hover {
+text-shadow: 0 0 10px rgba(255,255,100,1);
+}
+
+#f-benrodia {
+	font-size: 3.5em;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#f-gallery {
+	font-size: 2em;
+	position: absolute;
+	top: 70px;
+	left: 550px
+}
+#f-about {
+	font-size: 1.6em;
+	position: absolute;
+	top: 340px;
+	left: 600px;
+}
+#f-inspirations {
+	font-size: 1.2em;
+	position: absolute;
+	top: 500px;
+	left: 490px;
+}
+#welcome {
+	position: absolute;
+	top: 60px;
+	left: 909px; 
+	text-align: right;
+	font-size: 1.3em;
+}
+.reach {
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+
+/*GALLERY SPECIFIC*/
+
+.section {
+	padding: 25px;
+}
+.section li{
+	display: inline-block;
+}
+
+.section p {
+	visibility: hidden;
+	display: inline-block;
+	padding: 10px;
+}
+
+.section img {
+	box-sizing: border-box;
+	width: 250px;
+	height: 250px;
+	margin: 0 5px; 
+	display: inline-block;
+	border-radius: 30px;
+}
+
+.section img:hover, #gallery p:hover {
+	opacity: .5;
+}
+
+
+/*ABOUT SPECIFIC*/
+
+.face {
+	top: 100px;
+	float: right;
+	clear: left;
+	overflow: auto;
+	margin: 10px;
+}
+
+.face img {
+	border-radius: 30px;
+	box-sizing: border-box;
+	width: 250px;
+	height: 300px;
+}
+
+/*INSPIRATIONS SPECIFIC*/
+
+#inspirations-body img{
+	box-sizing: border-box;
+	width: 350px;
+	height: 200px;
+	float: right;
+	clear: both;
+	overflow: auto;
+	margin: 10px;
+	box-shadow: 5px 0 5px rgba (0,0,0,.5)
+}
