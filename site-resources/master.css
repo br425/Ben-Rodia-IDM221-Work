@@ -1,87 +1,418 @@
+
+/*GENERAL TAGS*/
+
 html {
-	background-image: url(graphics/atmospheric-design.png);
 	color: #cccccc;
-	font-family: 'Merriweather', serif;
 	line-height: 1.4;
-	}
+	font-family: 'Merriweather';
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+
+p {
+	margin: 20px;
+	overflow-wrap: break-word;
+	text-align: left;
+}
+
+h1, h2, h3 {margin: 30px 0 0px 0;}
+
+li {list-style: none;}
+
+div, li {border-radius: 10px;}
+
+.benrodia {
+	float: left; 
+	top: 1%;
+	left: 3%;
+}
+.benrodia:hover {
+	animation-name: benrodia-hover;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+.nav li a:hover, .active {
+	border-radius: 0 0 10px 10px;
+}
+
+/*a:hover {
+    animation-name: anchor-hover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+*/
+.float {
+	float: left;
+	left: 5%;
+	top: 10px;
+}
+
+.centered {text-align: center;}
+
+.underline {	
+	border-top: solid;
+	border-radius: 0;
+	border-top-color: maroon;
+}
+
+/*PAGE TAGS*/
+
+#index-body {
+	background-image: url(graphics/atmospheric-design.png);
+	background-size: cover;
+}
+
+#aboutme-body, #gallery-body, #inspirations-body {
+	background-image: url(graphics/atmospheric-design.png);
+	background-attachment: fixed;
+}
+
+
+/*OVERALL STRUCTURE TAGS*/
 
 #container {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 120px;
-	margin-right: 120px;}
+	min-width: 610px;
+	margin: 0 15%; 
+}
 
 #header {
-	background-color: rgba(25, 0, 40, .9);
-	padding-bottom: 5px;
-	position: fixed;
-    top: 0;}
-.nav {
-	padding-left: 100px;
-	padding-right: 20px;
-	margin-right: 240px;
 	font-size: 1.5em;
-    width: inherit;}
+	z-index: 10;
+	background-color: #330000;
+	position: fixed;
+    top: -10px;
+    left: 0;
+	width: 85%;
+	min-width: 400px;
+	box-sizing: border-box;
+	border-radius: 0 0 60px 0px;
+}
 
 #body {
-	margin-top: 120px;
-	padding-top: 30px;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 10px;
-	background-color: rgba(0, 18, 51, .9);
-	text-shadow: -3px 4px rgba(0,0,0,.6);
+	text-align: center;
+	margin-top: 70px;
+	padding: 2% 0% 10%;
+	background-color: rgba(0, 25, 52, .9);
+	text-shadow: -3px 4px black;
+	z-index: 1;
+}
 
-	}
+#body p {font-family: 'Roboto Slab', serif;}
+
+#body a, #footer a {color: #cc0000; text-decoration: none;}
 
 #footer {
-	background-color: rgba(25, 0, 40, .9);
-	width: 100%;
-	padding: 10px;
+	border-radius: 30px 30px 0 0;
+	margin-top: -40px;
+	background-color: #330000;
 	text-shadow: -3px 4px rgba(0,0,0,.6);
-
+	font-family: "Merriweather";
+	text-align: center;
+	padding: 2%;
 }
-.my-info {
-	margin-left: 30vw;
+#footer p {
+	display: inline-block;
 }
 
-a {color: #cc0000;}
+/*NAVIGATION TAGS*/
 
+.nav {
+	text-align: center;
+}
 .nav li {
-	list-style-type: none;
-	background-color: maroon;
-	margin: 0px;
-	display: inline;
-	justify-content: center;}
+	align-content: center;
+	display: inline-block;
+	margin: 0 5px;
+}
 
-.nav a{
+.fill-nav {
+	min-width: 250px;
+	padding: 5px 0;
+}
+
+.fill-nav a{
 	text-align: center;
 	text-decoration: none;
 	color: #cccccc;	
-	margin: 0px;
-	padding: 10px;}
+}
 
-.nav a:hover {
+.fill-nav:hover {
+	padding: 10px 0;
 	background-color: #cc0000;
-	text-shadow: -5px 4px rgba(0,0,0,.7);
+	text-shadow: 0 0 10px rgba(255,255,0,1); 
+    background-color: red;
+    border-radius: 0 0 10px 10px;
+    animation-name: nav-hover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+.benrodia a:hover {
+	padding: 10px;
+	background-color: #cc0000;
+	text-shadow: 0 0 10px rgba(255,255,0,1); 
+    background-color: red;
+    border-radius: 0 0 10px 10px;
+    animation-name: benrodia-hover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
 .active {
-	background-color: #cc0000;
-	font-weight: 2em;
-	color: black;}
+	background-color: maroon;
+	padding: 10px 0;
+}
 
+.benrodia {
+	text-decoration: none;
+	color: #cccccc;	
+	padding: 10px;
+	margin-left: 2%;
+}
 
-#gallery ul, li{
+/*GALLERY ASIDE*/
+
+aside {
+	background-color: #330000;
+	position: fixed;
+	float: left;
+	width: 12%;
+	padding: 90px 10px 10px 10px;
+	top: 5px;
+	left: 0px;
+	text-align: center;
+	border-radius: 10px 10px 30px 0px;
+	z-index: 5;
+}
+aside a {
+	color: #cccccc;	
+	padding: 10px 10px;
+	min-width: 10%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.3em;	
+	text-align: center;
+}
+.fill-aside {
+	min-width: 100px;
+	padding: 10px 0px;
+	margin: 0 auto;
+}
+
+.fill-aside:hover {
+	background-color: red;
+	border-radius: 0 0 10px 10px;
+    animation-name: nav-hover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+aside h2 {
+	font-size: 2em;
+	padding: 0px;
+	margin: -20px 0 25px 0;
+}
+
+/*INDEX SPECIFIC*/
+
+#indexfooter {
+	text-align: center;
+	padding: 30px;
+}
+
+#front{	 
+	height: 750px;
+	box-sizing: border-box;
+}
+
+#front a {
+	padding: 30px;
+	text-decoration: none;
+	color: rgba(255,0,0,.5);
+	font-family: "Merriweather"
+}
+
+#front a:hover {
+	animation-name: front-hover;
+	animation-duration: 3s;
+}
+
+#f-benrodia {
+	font-size: 3.5em;
+	position: absolute;
+	top: 5%;
+	left: 3%;
+}
+
+#f-gallery {
+	font-size: 2em;
+	position: absolute;
+	top: 12%;
+	left: 42%;
+}
+#f-about {
+	font-size: 1.6em;
+	position: absolute;
+	top: 58%;
+	left: 47%;
+}
+#f-inspirations {
+	font-size: 1.2em;
+	position: absolute;
+	top: 85%;
+	left: 38%;
+}
+#welcome {
+	position: absolute;
+	top: 6%;
+	right: 3%; 
+	text-align: right;
+	font-size: 1.3em;
+}
+.reach {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.contact p {
+	display: inline-block;
+	text-align: center;
+}
+
+/*GALLERY SPECIFIC*/
+
+.gallery h2 {margin: 30px 0 -10px 0;}
+
+.section {
+	margin: auto;
+}
+
+.section li{
+	display: inline-block;
 	list-style: none;
-	display: inline;
-	margin: 0;
-	justify-content: left;
-	}
+	text-indent: 0;
+	align-content: center;
+}
 
-.thumbnail {
-	width: 300px;
+.section a {padding: 1px;}
+
+.section p {
+	visibility: hidden;
+	position: relative;
+	bottom: 40%;
+	left: 30%;
+	font-size: 3em;
+	color: white;
+}
+
+.section img {
+	box-sizing: border-box;
+	width: 250px;
+	height: 250px;
+	margin: 0px 5px 5px 5px; 
+	display: inline-block;
+	border-radius: 10px;
+}
+
+figcaption {
+	position: relative;
+	color: #cccccc;
+	font-size: 1.2em;
+	top: -100px;
+	left: 0px;
+	margin: 0 auto;
+	display: none;
+	line-height: 0;
+	padding: 0;
+}
+
+figure img:hover {
+	opacity: .6;
+	transition: .6s;
+	transform: rotateZ(2deg);
+}
+
+figure:hover figcaption {
+	transition: .5s;
+	display: block;
+	line-height: 0;
+}
+
+
+/*ABOUT SPECIFIC*/
+
+.face {
+	top: 100px;
+	float: right;
+	clear: left;
+	overflow: auto;
+	margin: 10px;
+}
+
+.face img {
+	border-radius: 30px;
+	box-sizing: border-box;
+	width: 250px;
+	height: 300px;
+}
+
+/*INSPIRATIONS SPECIFIC*/
+
+#inspirations-body img{
+	box-sizing: border-box;
+	width: 350px;
 	height: 200px;
-	margin: 5px;
-	}
+	float: right;
+	clear: both;
+	overflow: auto;
+	padding: 20px;
+	margin: 0px 10px -10px 10px;
+}
 
+/*ANIMATIONS*/
+
+@keyframes nav-hover {
+
+    0%   {background-color: maroon; }
+    30%  {
+    	background-color: #FF9855; 
+    	box-shadow: 0 0 25px rgba(255,0,0,.7);
+    	}
+    70%   {background-color: maroon; }
+    100%   {background-color: maroon; }
+}
+
+@keyframes front-hover {
+
+    0%   {
+    	color: #FF9855; 
+  		text-shadow: 0 0 55px rgba(255,250,200,1);
+}
+    40%  {
+    	color: red;
+  		text-shadow: 0 0 45px rgba(255,0,0,1);
+    	}
+    100%   {
+    	color: #FF9855; 
+  		text-shadow: 0 0 55px rgba(255,250,200,1);
+}
+}
+@keyframes benrodia-hover {
+
+    0%   {
+    	color: #cccccc; 
+  		text-shadow: 0 0 5px rgba(255,250,200,.5);
+}
+    40%  {
+    	color: #FF9855;
+  		text-shadow: 0 0 45px rgba(255,250,200,1);
+    	}
+    100%   {
+    	color: #cccccc; 
+  		text-shadow: 0 0 5px rgba(255,250,200,.5);
+}
+}
